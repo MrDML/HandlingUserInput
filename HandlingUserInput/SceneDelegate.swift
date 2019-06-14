@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use a UIHostingController as window root view controller
         let window = UIWindow(frame: UIScreen.main.bounds)
         window.rootViewController = UIHostingController(
-            rootView:ListView().environmentObject(UserData()) // 将数据添加到修改器中 
+            rootView:ListView().environmentObject(UserData()) // 模拟器运行的时候需要将参数传入到这个视图中去，测试的已经添加，模拟器运行不会执行测试
         )
         self.window = window
         window.makeKeyAndVisible()
